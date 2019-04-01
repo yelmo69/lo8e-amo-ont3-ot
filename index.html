@@ -9,13 +9,13 @@
 
         <header id="header">
             <h1 id="page-title">Ontwerp 4 - Git-flow</h1>
-            <p id="naam">Marcel Akerboom</p>
-            <p id="version">Versie: 4</p>
+            <p id="naam">Naam van student</p>
+            <p id="version">Versie: 2</p>
         </header>
 
         <main id="main">
             <section id="intro">
-                <h1>Ontwerp 4 - Git-flow</h1>
+                <h1>Ontwerp 3 - Oefentoets</h1>
             </section>
 
 
@@ -25,7 +25,7 @@
                         <h2>Introductie</h2>
                     </div>
                     <div class="meta">
-                        <img src="images/introductie.png">
+                        <img src="images/introductie.jpg">
                     </div>
                 </header>
                 <section>
@@ -39,8 +39,8 @@
                             <em>pushing</em> en
                             <em>pulling</em>
                         </li>
-                        <li>Merge conflicten kunnen oplossen</li>
                         <li>Kunnen werken volgens de gitflow methode</li>
+                        <li>Use case diagrammen kunnen lezen</li>
                     </ul>
                 </section>
 
@@ -61,7 +61,7 @@
                         <h2>Afbeeldingen toevoegen</h2>
                     </div>
                     <div class="meta">
-                        <img src="images/afbeeldingen.png">
+                        <img src="images/placeholder.jpg">
                     </div>
                 </header>
                 <section>
@@ -96,43 +96,55 @@
                 </section>
             </article>
 
-
-            <article>
+            <article id="use-case-diagram">
                 <header>
                     <div class="title">
-                        <h2>Hete soep!</h2>
+                        <h2>Use case diagram</h2>
                     </div>
                     <div class="meta">
-                        <img src="images/soep.png">
+                        <img src="images/placeholder.jpg">
                     </div>
                 </header>
                 <section>
                     <ul>
                         <li>Ga naar de <strong>master</strong> branch.</li>
-                        <li>Start een nieuwe hotfix branch: <strong>hotfix/naam-vergeten</strong></li>
+                        <li>Start een nieuwe feature branch: <strong>feature/use-case-diagram</strong></li>
                         <li>
-                            Voeg jouw naam toe aan de <em>index.html</em><br>
-                            Boven aan de pagina, in de header, kun je de tekst <a href="#naam">"Student-naam"</a>
-                            weghalen en jouw eigen naam invoeren.
+                            Maak een <em>Use Case Diagram</em> voor de volgende <em>User-stories</em>
+                            <ul>
+                                <li>Als koper wil ik een account aanmaken zodat ik mijn bestellingen kan bijhouden</li>
+                                <li>Als koper wil ik producten zoeken zodat ik mijn favoriete product kan bestellen</li>
+                                <li>Als koper wil ik mijn bestellingen betalen met ideal omdat ik geen creditcard heb.
+                                </li>
+                                <li>Als koper wil ik mijn bestellingen betalen met creditcard zodat mijn aankopen
+                                    beschermd zijn.
+                                </li>
+                                <li>Als koper wil ik mijn vragen kunnen stellen aan de service-medewerker zodat ik mijn
+                                    vragen beantwoord krijg.
+                                </li>
+                                <li>Als beheerder wil ik producten toevoegen zodat kopers nieuwe producten kunnen
+                                    bestellen.
+                                </li>
+                                <li>Als beheerder wil ik producten verwijderen zodat oude producten niet meer te
+                                    bestellen zijn.
+                                </li>
+                                <li>Als beheerder wil ik producten wijzigen zodat de product informatie up-to-date
+                                    blijft.
+                                </li>
+                            </ul>
                         </li>
+                        <li>Vervang onderstaande placholder image (id=use-case-image) met jouw use case diagram.</li>
                         <li>Commit deze aanpassing</li>
-                        <li>Ga naar de <strong>develop</strong> branch</li>
                         <li>
-                            <em>Merge</em> de aanpassingen van
-                            <strong>hotfix/naam-vergeten</strong> naar
-                            <strong>develop</strong>.
+                            <em>Merge</em> de aanpassingen van naar de <strong>develop</strong> branch
                         </li>
                         <li>Push de <strong>develop</strong> branch naar github</li>
-                        <li>Ga naar de <strong>master</strong> branch</li>
-                        <li>
-                            <em>Merge</em> de aanpassingen van
-                            <strong>hotfix/naam-vergeten</strong> naar
-                            <strong>master</strong>.
-                        </li>
-                        <li>Push de <strong>master</strong> branch naar github</li>
                     </ul>
                 </section>
-
+                <section>
+                    <h3>Use case diagram</h3>
+                    <img src="images/placeholder.jpg" alt="Use case diagram" id="use-case-image">
+                </section>
             </article>
 
             <article id="conflict">
@@ -145,15 +157,15 @@
                         </p>
                     </div>
                     <div class="meta">
-                        <img src="images/conflict.png">
+                        <img src="images/placeholder.jpg">
                     </div>
                 </header>
 
                 <section>
-                    <h3>Chuck</h3>
+                    <h3>Hulk</h3>
                     <ul>
-                        <li>Begin een nieuwe feature branch: <strong>feature/chuck</strong></li>
-                        <li>Pas de hierboven aangegeven winnaar aan naar: <em>Chuck Norris</em></li>
+                        <li>Begin een nieuwe feature branch: <strong>feature/hulk</strong></li>
+                        <li>Pas de hierboven aangegeven winnaar aan naar: <em>Hulk</em></li>
                         <li>Commit deze wijziging.</li>
                     </ul>
 
@@ -173,7 +185,7 @@
                             <strong>develop</strong>.
                         </li>
                         <li>Controleer of superman de winnaar is.</li>
-                        <li><em>Merge</em> de aanpassingen van <strong>feature/chuck</strong> naar
+                        <li><em>Merge</em> de aanpassingen van <strong>feature/hulk</strong> naar
                             <strong>develop</strong>.
                         </li>
                         <li>
@@ -182,12 +194,12 @@
                                 <<<<<<< HEAD
                                 &lt;span id="winnaar"&gt;Superman&lt;/span&gt;
                                 =======
-                                &lt;span id="winnaar"&gt;Chuck&lt;/span&gt;
-                                >>>>>>> feature/chuck
+                                &lt;span id="winnaar"&gt;Hulk&lt;/span&gt;
+                                >>>>>>> feature/hulk
                                 </code>
                             </pre>
                         </li>
-                        <li>Zorg dat <em>Chuck</em> de winnaar is.</li>
+                        <li>Zorg dat <em>Hulk</em> de winnaar is.</li>
                         <li>Commit de merge</li>
                         <li>Push de <strong>develop</strong> branch naar github</li>
                     </ul>
@@ -200,7 +212,7 @@
                         <h2>Release</h2>
                     </div>
                     <div class="meta">
-                        <img src="images/release.png">
+                        <img src="images/placeholder.jpg">
                     </div>
                 </header>
                 <section>
@@ -209,7 +221,8 @@
                         <li>Start een nieuwe release branch: <strong>release/{versie}</strong></li>
                         <li>
                             Pas de versie aan in de <em>index.html</em><br>
-                            Boven aan de <em>index.html</em>, zie je de laatse <a href="#version">versie</a>,
+                            Boven aan de <em>index.html</em> (id=version), zie je de laatse <a
+                                href="#version">versie</a>,
                             jouw <em>{versie}</em> is 1 cijfer hoger.
                         </li>
                         <li>Commit deze aanpassing</li>
